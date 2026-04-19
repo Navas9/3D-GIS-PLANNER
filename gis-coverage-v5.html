@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GIS Coverage Analyzer</title>
+<script type="text/javascript" nonce="5fda0c7e4ca242e0950b8fdc9a9" src="//injections.adguard.org?ts=1775907949388&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2Fd443e4e44758badac709368f4908e89e%2Ffb1c7d92-e549-434b-8192-903e4e5aae78%2F495fe329.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253D%2522gis-coverage-v5.html%2522%253B%2520filename%252A%253DUTF-8%2527%2527gis-coverage-v5.html%26AWSAccessKeyId%3DASIA2F3EMEYEQHCW44PD%26Signature%3DEg3puIBBrYJVm2RbQypmYgCHOpM%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEHwaCXVzLWVhc3QtMSJGMEQCIFRcsoV2xl9D5TZIpZWRQdjExFhodFKx1vsM6mvGd5UgAiAt3zxqWiENBfU7e%252FvS4hpHq8ZIU%252FDti98k9bYkWYQS3yrzBAhEEAEaDDY5OTc1MzMwOTcwNSIMV4TKFlBCCgacsLRvKtAEQwTJGp110FQiXQuZS84hZrWshaNXB%252Bk64o1HtKbwAX5ZYpd1fgSvFu0HKV0jsu2TNcUemcCuNX5BQ2gXGK566298dN4oMsemzc%252BaIQU%252F51b%252Fmj1SFk2qdgcfsSlzKXTtJyJiA8whNVafh7a0IB0C%252BEeb1S3r4Zo%252BpCTM17qjlG%252F74kpqYTRFT30e%252BjUjxb8HlzzJ4vwMT8tUyQ9PCDBqMBsNV98QzDJ2VNsTmtz3zhhewvc24ZPfQKunZNIBf9qZBSCNrvYOjmLzILgtUMXgbu7DqbwcJBCyfGMDinIv2P%252FJBgPVv2KipooJ082MJOZJPNtHCb7W5b29R5rxYk74AbPnObwTmQwGwjGLbuM1KTDQFdcyOG8C9cVQ9bQo2eC4BPJt4p5e7dHXPR1y8Rx2eXVFWbXBYEZnRsXJTX%252FgIhyus3kREFYbFtKYHSxJBsAK%252FXwbtA4RgLWVHBaxU6Hupgbo8LsYyko%252FIVE6bMt7YScYe8g%252B2AuhdnFftOybwG8bxwawxnoElFsTpp9UyNLsJJjOYXzwhp4b5%252Fdix%252B0PQd%252FE07%252F%252BAccAN56K%252FIpSg01IzwovKHIPV%252Bly39CTAvgTUoWAVtmYt0XZdVgW4vnN72TZR15Kk3QWrx5Bo5SHhBhLB%252FKK7%252BiXz4rGQZZm9ZjtE90oDpWE3G2gCY%252BpTJO0y4BeuBxYfuOcj11bBYYUdiMhbEfWIypwTYc4nW3sfDsQi5k1LV3nCJB%252Bfp6Gubte7D355cdbcrWs7pFTfCMhq7t5YoXNmaH2QmR32TzOZOOMuTCX3OjOBjqZAUWhooFU6pWczRgdN3q3uFlarCoEqLTiYqQQmi0ELOKMcLAAa0uO%252B93rXaDRGPirOQk5PvO8GXQcChonX7F6nkdYu5Qxgi3bdwl3o7m5Hg6vXIOPIixdydr1mYKxhlhU1HHhDbqLyvRT%252BXgSq6llGLQ4fAuw%252FeXWXzQ%252Brt23roxMr3Sdb0PHzJJ0oIx7NM%252BnPGtYdukAWYMhkw%253D%253D%26Expires%3D1775908601&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="5fda0c7e4ca242e0950b8fdc9a9" src="//injections.adguard.org?ts=1775907949388&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><script type="text/javascript" nonce="c159934fc9954a40b2987261df5" src="//injections.adguard.org?ts=1775848862938&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2F00eced409dbf6198162a6e2ff7cfa160%2F8090f5e4-e315-45b6-8f55-2eb876c441b1%2F117be40e.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253D%2522gis-coverage.html%2522%253B%2520filename%252A%253DUTF-8%2527%2527gis-coverage.html%26AWSAccessKeyId%3DASIA2F3EMEYEZAOWQDO7%26Signature%3DpTdgQw5uKN%252B155XE4a5u1Nw1BBA%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEGwaCXVzLWVhc3QtMSJHMEUCIDzREuyp562bpRWDn%252FHVAsGZE4CPA%252FTaBUP0u8lkSwZAAiEA2CdL3tDynURfHtRS%252B5xl9m6BETaZMGdARVxNEVPjUn8q8wQINRABGgw2OTk3NTMzMDk3MDUiDFTSacUdYRmPMR9rRyrQBIF0BIO%252Byo5Wozx04Ija14U5bMsApc74CN21QQyqXLTRIPUbHtiuOwCIo1d5jq4Cunu3KwE2DmvMJ0XhVQ93azNk%252Fb%252Fg%252F1ik6KRxF35Rnrf4atT9Ml5haANIFTqI6unTo0rKlNHm9rKoPyeX67oazj%252F00bCL1sj1VmlnEX7FHEhvIka3yohmLIGKdxwFKWbry9rpRNqCO7aVertT9fL%252Fs3%252FQDiEagHSc4GAR76XritvttZWbez6h5lsyH71iEOuf4xPodYwZEX9TzWuxE36W%252BrbK%252FjBQ65EZ2mzDY0mgHj%252Bh%252FWnXY7Xi91fP9qOxgXEh07%252BMJ9GXy0rBHbUKeU9dKWdsgEwUSwQNpSeSXkELSDBf0Dw9Tb%252F%252FLQVWUyF8L9AAc5S1dV3bQ1DRNgyXlu2ZrjlJLT57xmRb0z87VkYM%252BWodMn64%252BsuAiup9HPCvJnGlWe6pEKBiVCASA54Wr3kkxYZDavj3mJJb4VajUd3TMLj13RTiOzz7Y%252F16uBG3abnWW1%252FvxIREAGYo7VZvr5XSOrBJy1ZByYCLrtHSQI57HHP2qGUW2prlBJbGbqz1eyqC4tAT7EL%252BspdVcvGDx4FRAMABtBjDP4kuPvvKOaNvTRtTG2T6PFSdLqC5Jx0TuWDXs6nE6hd683wvnrcRl44Su5HnZoI%252BXWZUGgtoglVcP67tasljfwNk3xtRltgZCOb38%252FO5utak4m2ZBSSuHQbnKePwQyJh19y1SdMjiS9fRmiEjcmenFWopfaae3vI7fvVTJWSZ4Nw55FxpliM8As1uQMws5zlzgY6mAG8N8qkpfUY31t7mQlu%252FlW0IgaM9uCzoYiWj313bCCYf%252FTXwkvERI%252F4jUjNDawNXxd5eG8zV4jK64oLyMMd15GCZgRDaZO8ECuemtdZSK%252B2A0uJpbmx9Wk%252FZMEWIsHUkFbAPX9wW8x3Qk0B9JlHGD6SmoOmZIL0m%252F3iRbKcBJgglAbrTTZoyxRppUbIqkmv%252Bc8qPSdhdzjG5g%253D%253D%26Expires%3D1775850886&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="c159934fc9954a40b2987261df5" src="//injections.adguard.org?ts=1775848862938&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.css"/>
+<script src="https://unpkg.com/maplibre-gl@4.7.0/dist/maplibre-gl.js"></script>
+<!-- Three.js via importmap -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.163.0/examples/jsm/"
+  }
+}
+</script>
+<style>
+:root,[data-theme="dark"]{
+  --bg:#0f1117;--surface:#161b22;--surface2:#1c2128;--offset:#21262d;
+  --border:#30363d;--div:#21262d;--text:#e6edf3;--muted:#8b949e;--faint:#484f58;
+  --primary:#388bfd;--primaryH:#58a6ff;--accent:#3fb950;
+  --r-sm:.375rem;--r-md:.5rem;--r-lg:.75rem;--r-xl:1rem;
+  --s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.25rem;--s6:1.5rem;
+  --xs:clamp(.75rem,.7rem + .25vw,.875rem);--sm:clamp(.875rem,.8rem + .35vw,1rem);
+  --base:clamp(1rem,.95rem + .25vw,1.125rem);
+  --font:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',monospace;
+  --shad:0 12px 32px rgba(0,0,0,.5);--tr:180ms cubic-bezier(.16,1,.3,1);
+}
+[data-theme="light"]{
+  --bg:#f6f8fa;--surface:#fff;--surface2:#f6f8fa;--offset:#eaeef2;
+  --border:#d0d7de;--div:#d8dee4;--text:#1f2328;--muted:#636c76;--faint:#9ba1a8;
+  --primary:#0969da;--primaryH:#0550ae;--accent:#1a7f37;
+  --shad:0 12px 32px rgba(0,0,0,.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{-webkit-font-smoothing:antialiased;}
+body{font-family:var(--font);font-size:var(--sm);background:var(--bg);color:var(--text);
+  height:100dvh;display:flex;flex-direction:column;overflow:hidden;}
+button{cursor:pointer;border:none;background:none;font:inherit;color:inherit;}
+
+#header{display:flex;align-items:center;gap:var(--s3);padding:var(--s2) var(--s4);
+  background:var(--surface);border-bottom:1px solid var(--border);z-index:1000;flex-shrink:0;height:48px;}
+.logo{display:flex;align-items:center;gap:var(--s2);font-size:var(--sm);font-weight:600;}
+.logo svg{width:26px;height:26px;color:var(--primary);}
+#hactions{display:flex;align-items:center;gap:var(--s2);margin-left:auto;}
+.bicon{display:flex;align-items:center;justify-content:center;width:32px;height:32px;
+  border-radius:var(--r-md);border:1px solid var(--border);background:var(--offset);
+  color:var(--muted);transition:all var(--tr);}
+.bicon:hover{color:var(--text);background:var(--surface2);}
+.bprimary{display:flex;align-items:center;gap:var(--s2);padding:0 var(--s3);height:32px;
+  border-radius:var(--r-md);border:1px solid var(--primary);background:var(--primary);
+  color:#fff;font-size:var(--xs);font-weight:500;transition:background var(--tr);}
+.bprimary:hover{background:var(--primaryH);}
+.b3d{display:flex;align-items:center;gap:var(--s2);padding:0 var(--s3);height:32px;
+  border-radius:var(--r-md);border:1px solid var(--border);background:var(--offset);
+  color:var(--muted);font-size:var(--xs);font-weight:500;transition:all var(--tr);}
+.b3d:hover{color:var(--text);background:var(--surface2);}
+.b3d.on{border-color:#a855f7;background:rgba(168,85,247,.15);color:#a855f7;}
+
+#body{display:flex;flex:1;overflow:hidden;}
+
+#sb{width:230px;flex-shrink:0;background:var(--surface);border-right:1px solid var(--border);
+  display:flex;flex-direction:column;overflow-y:auto;z-index:100;}
+.sbs{padding:var(--s3) var(--s4);border-bottom:1px solid var(--div);}
+.sbt{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:var(--s2);}
+.ir{display:flex;justify-content:space-between;align-items:center;padding:2px 0;}
+.il{font-size:var(--xs);color:var(--muted);}
+.iv{font-family:var(--mono);font-size:var(--xs);color:var(--accent);font-weight:500;}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:1px 6px;border-radius:9999px;font-size:10px;font-weight:500;}
+.s-off{background:rgba(139,148,158,.15);color:var(--muted);}
+.s-on{background:rgba(63,185,80,.15);color:var(--accent);}
+.sdot{width:5px;height:5px;border-radius:50%;background:currentColor;}
+.ci{display:flex;align-items:center;padding:3px 0;}
+.ci label{display:flex;align-items:center;gap:var(--s2);font-size:var(--xs);cursor:pointer;color:var(--text);flex:1;}
+.ci input[type=checkbox]{width:13px;height:13px;accent-color:var(--primary);cursor:pointer;}
+.cd{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.rr{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid var(--div);}
+.rr:last-child{border-bottom:none;}
+.rl{font-size:var(--xs);color:var(--muted);}
+.rv{font-family:var(--mono);font-size:var(--xs);font-weight:500;}
+
+#mapc{flex:1;position:relative;overflow:hidden;}
+#map{width:100%;height:100%;}
+.tip{position:absolute;bottom:var(--s4);left:50%;transform:translateX(-50%);
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);
+  padding:var(--s2) var(--s4);font-size:var(--xs);color:var(--muted);
+  pointer-events:none;z-index:1000;white-space:nowrap;}
+
+/* 3D PANEL */
+#p3d{position:absolute;top:0;right:0;width:480px;height:100%;
+  background:var(--bg);border-left:1px solid var(--border);
+  display:flex;flex-direction:column;z-index:500;
+  transform:translateX(100%);transition:transform .3s cubic-bezier(.16,1,.3,1);
+  pointer-events:none;}
+#p3d.open{transform:translateX(0);pointer-events:all;}
+#p3d-hd{display:flex;align-items:center;justify-content:space-between;
+  padding:var(--s3) var(--s4);border-bottom:1px solid var(--border);
+  background:var(--surface);flex-shrink:0;height:44px;}
+#p3d-title{font-size:var(--sm);font-weight:600;display:flex;align-items:center;gap:var(--s2);}
+.tbadge{display:inline-flex;align-items:center;gap:4px;padding:1px 7px;border-radius:9999px;
+  font-size:10px;background:rgba(168,85,247,.15);color:#a855f7;font-weight:500;}
+#p3d-actions{display:flex;align-items:center;gap:var(--s2);}
+.terrain-btn{display:flex;align-items:center;gap:5px;padding:0 var(--s3);height:28px;
+  border-radius:var(--r-md);border:1px solid var(--border);background:var(--offset);
+  color:var(--muted);font-size:var(--xs);font-weight:500;transition:all var(--tr);}
+.terrain-btn:hover{color:var(--text);}
+.terrain-btn.on{border-color:var(--accent);background:rgba(63,185,80,.15);color:var(--accent);}
+#canvas3d{display:block;flex:1;width:100%;min-height:0;}
+#p3d-ft{padding:var(--s2) var(--s4);border-top:1px solid var(--border);background:var(--surface);
+  font-size:10px;color:var(--muted);flex-shrink:0;display:flex;align-items:center;gap:var(--s4);}
+
+/* MODAL */
+.mback{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(4px);
+  z-index:2000;display:none;align-items:center;justify-content:center;}
+.mback.open{display:flex;}
+.modal{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);
+  padding:var(--s6);width:min(520px,92vw);max-height:88vh;overflow-y:auto;box-shadow:var(--shad);}
+.mhd{display:flex;align-items:center;justify-content:space-between;margin-bottom:var(--s5);}
+.mtitle{font-size:var(--base);font-weight:600;}
+.mclose{display:flex;align-items:center;justify-content:center;width:26px;height:26px;
+  border-radius:var(--r-sm);color:var(--muted);}
+.mclose:hover{background:var(--offset);color:var(--text);}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:var(--s4);}
+.f{display:flex;flex-direction:column;gap:3px;}
+.f.fw{grid-column:1/-1;}
+.fl{font-size:var(--xs);font-weight:500;color:var(--muted);}
+.fi-wrap{display:flex;align-items:center;border:1px solid var(--border);border-radius:var(--r-md);
+  overflow:hidden;background:var(--offset);transition:border-color var(--tr);}
+.fi-wrap:focus-within{border-color:var(--primary);}
+.fi{flex:1;padding:var(--s2) var(--s3);background:transparent;border:none;outline:none;
+  font-family:var(--mono);font-size:var(--xs);font-weight:500;color:var(--text);}
+.utog{display:flex;background:var(--surface);border-left:1px solid var(--border);}
+.ub{padding:2px var(--s2);font-size:var(--xs);font-weight:500;color:var(--muted);
+  background:transparent;border:none;cursor:pointer;transition:all var(--tr);}
+.ub.on{background:var(--primary);color:#fff;}
+.ub:hover:not(.on){background:var(--offset);color:var(--text);}
+.usep{width:1px;background:var(--border);}
+.uonly{padding:2px var(--s3);font-size:var(--xs);color:var(--muted);font-family:var(--mono);}
+.fdiv{font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;
+  margin:var(--s2) 0 0;padding-bottom:var(--s2);border-bottom:1px solid var(--div);grid-column:1/-1;}
+.mft{display:flex;justify-content:flex-end;gap:var(--s2);margin-top:var(--s5);
+  padding-top:var(--s4);border-top:1px solid var(--div);}
+.bghost{padding:var(--s2) var(--s4);border-radius:var(--r-md);border:1px solid var(--border);
+  font-size:var(--xs);color:var(--muted);transition:all var(--tr);}
+.bghost:hover{color:var(--text);background:var(--offset);}
+.bsave{padding:var(--s2) var(--s4);border-radius:var(--r-md);background:var(--primary);
+  border:1px solid var(--primary);font-size:var(--xs);font-weight:500;color:#fff;
+  transition:background var(--tr);}
+.bsave:hover{background:var(--primaryH);}
+
+#pgis{position:absolute;top:0;right:0;width:580px;height:100%;background:var(--bg);border-left:1px solid var(--border);display:flex;flex-direction:column;z-index:510;transform:translateX(100%);transition:transform .3s cubic-bezier(.16,1,.3,1);pointer-events:none;}
+#pgis.open{transform:translateX(0);pointer-events:all;}
+#p3d{z-index:500!important;}
+.bgis{display:flex;align-items:center;gap:var(--s2);padding:0 var(--s3);height:32px;border-radius:var(--r-md);border:1px solid var(--border);background:var(--offset);color:var(--muted);font-size:var(--xs);font-weight:500;transition:all var(--tr);}
+.bgis:hover{color:var(--text);background:var(--surface2);}
+.bgis.on{border-color:#f59e0b;background:rgba(245,158,11,.13);color:#f59e0b;}
+#pgis-hd{display:flex;align-items:center;justify-content:space-between;padding:var(--s3) var(--s4);border-bottom:1px solid var(--border);background:var(--surface);flex-shrink:0;height:44px;}
+#pgis-title{font-size:var(--sm);font-weight:600;display:flex;align-items:center;gap:var(--s2);}
+.tb-am{display:inline-flex;padding:1px 7px;border-radius:9999px;font-size:10px;background:rgba(245,158,11,.13);color:#f59e0b;font-weight:500;}
+#pgis-act{display:flex;align-items:center;gap:var(--s2);}
+#mlmap{flex:1;width:100%;min-height:0;height:calc(100% - 44px - 36px);}
+#pgis-ft{padding:var(--s2) var(--s4);border-top:1px solid var(--border);background:var(--surface);font-size:10px;color:var(--muted);flex-shrink:0;height:36px;display:flex;align-items:center;gap:var(--s4);}
+.maplibregl-ctrl-attrib{font-size:9px!important;}
+
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="logo">
+    <svg viewBox="0 0 26 26" fill="none">
+      <circle cx="13" cy="13" r="11" stroke="currentColor" stroke-width="1.5" opacity=".3"/>
+      <circle cx="13" cy="13" r="6"  stroke="currentColor" stroke-width="1.5" opacity=".55"/>
+      <path d="M13 5V2M13 21v3M5 13H2M21 13h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".4"/>
+      <polygon points="13,6 16,13 13,11 10,13" fill="currentColor"/>
+    </svg>
+    GIS Coverage Analyzer
+  </div>
+  <div id="hactions">
+    <button class="bgis" id="btn-gis3d"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/><path d="M12 3v18M3 7l9 4 9-4"/></svg>Mapa 3D GIS</button>
+    <button class="b3d" id="btn3d">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+      </svg>Vista 3D
+    </button>
+    <button class="bicon" id="btn-theme" title="Modo claro/oscuro">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+    <button class="bprimary" id="btn-cfg">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+      </svg>Configuración
+    </button>
+  </div>
+</header>
+
+<div id="body">
+  <aside id="sb">
+    <div class="sbs">
+      <div class="sbt">Estado</div>
+      <div class="ir"><span class="il">Sistema</span>
+        <span class="badge s-off" id="st-badge"><span class="sdot"></span>Sin posicionar</span></div>
+      <div class="ir"><span class="il">Lat</span><span class="iv" id="d-lat">—</span></div>
+      <div class="ir"><span class="il">Lon</span><span class="iv" id="d-lon">—</span></div>
+      <div class="ir"><span class="il">Rumbo</span><span class="iv" id="d-hdg">—</span></div>
+    </div>
+    <div class="sbs">
+      <div class="sbt">Capas de cobertura</div>
+      <div class="ci"><label><input type="checkbox" id="chk-r" checked>
+        <span class="cd" style="background:#ef4444"></span>Echo derecha</label></div>
+      <div class="ci"><label><input type="checkbox" id="chk-l" checked>
+        <span class="cd" style="background:#22d3ee"></span>Echo izquierda</label></div>
+      <div class="ci"><label><input type="checkbox" id="chk-b" checked>
+        <span class="cd" style="background:#f59e0b"></span>Cono ciego</label></div>
+      <div class="ci"><label><input type="checkbox" id="chk-rg" checked>
+        <span class="cd" style="background:#94a3b8;border:1px solid #666"></span>Profundidad Echo</label></div>
+    </div>
+    <div class="sbs">
+      <div class="sbt">Rangos calculados</div>
+      <div class="rr"><span class="rl">Near range</span><span class="rv" id="r-near" style="color:#e2e8f0">—</span></div>
+      <div class="rr"><span class="rl">Far range</span><span class="rv" id="r-far" style="color:#e2e8f0">—</span></div>
+      <div class="rr"><span class="rl">Cono ciego Ø</span><span class="rv" id="r-blind" style="color:#f59e0b">—</span></div>
+      <div class="rr"><span class="rl">Prof. Echo Ø</span><span class="rv" id="r-ring" style="color:#94a3b8">—</span></div>
+    </div>
+    <div class="sbs">
+      <div class="sbt">Parámetros activos</div>
+      <div class="ir"><span class="il">Altura</span><span class="iv" id="p-alt">—</span></div>
+      <div class="ir"><span class="il">Ang. sup / inf</span><span class="iv" id="p-ang">—</span></div>
+      <div class="ir"><span class="il">Frontal / Trasero</span><span class="iv" id="p-az">—</span></div>
+      <div class="ir"><span class="il">Prof. configurada</span><span class="iv" id="p-prof">—</span></div>
+    </div>
+    <div class="sbs" style="flex:1">
+      <div class="sbt">Controles</div>
+      <p style="font-size:var(--xs);color:var(--muted);line-height:1.8;">
+        🖱 <b>Clic</b> en mapa → posicionar<br>
+        ✋ <b>Arrastrar</b> flecha → mover<br>
+        🔄 <b>Rueda</b> sobre flecha → rotar<br>
+        ↩ <b>Clic derecho</b> flecha → +15°
+      </p>
+    </div>
+  </aside>
+
+  <div id="mapc">
+    <div id="map"></div>
+    <div class="tip" id="tip">Haz clic en el mapa para posicionar el sistema</div>
+
+    <!-- MAPA 3D GIS PANEL -->
+    <div id="pgis">
+      <div id="pgis-hd">
+        <div id="pgis-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/><path d="M12 3v18M3 7l9 4 9-4"/></svg>
+          Mapa 3D GIS <span class="tb-am">MapLibre v4</span>
+        </div>
+        <div id="pgis-act">
+          <button class="terrain-btn" id="btn-ml-terrain"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-8 4 5 3-4 6 7H3z"/></svg>Relieve: OFF</button>
+          <button class="terrain-btn" id="btn-ml-center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>Centrar</button>
+          <button class="bicon" id="btn-pgis-close"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+        </div>
+      </div>
+      <div id="mlmap"></div>
+      <div id="pgis-ft">
+        Arrastrar: mover &middot; Ctrl+drag: inclinar/rotar &middot; Rueda: zoom
+        <span style="margin-left:auto;font-family:var(--mono);color:var(--accent);font-size:10px;" id="lbl-ml"></span>
+      </div>
+    </div>
+    <!-- 3D PANEL -->
+    <div id="p3d">
+      <div id="p3d-hd">
+        <div id="p3d-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+          Vista 3D <span class="tbadge">Three.js</span>
+        </div>
+        <div id="p3d-actions">
+          <button class="terrain-btn" id="btn-terrain">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 17l5-8 4 5 3-4 6 7H3z"/>
+            </svg>Relieve: OFF
+          </button>
+          <button class="bicon" id="btn-3d-close" style="margin-left:var(--s1);">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <canvas id="canvas3d"></canvas>
+      <div id="p3d-ft">
+        🖱 Orbitar · Rueda: zoom · Clic derecho: pan
+        <span style="margin-left:auto;font-family:var(--mono);color:var(--accent);font-size:10px;" id="lbl3d"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIG MODAL -->
+<div class="mback" id="cfg-modal">
+  <div class="modal">
+    <div class="mhd">
+      <h2 class="mtitle">Configuración de parámetros Echo</h2>
+      <button class="mclose" id="m-close">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="fg">
+      <div class="fdiv">Altimetría</div>
+      <div class="f fw"><label class="fl">Altura del sistema</label>
+        <div class="fi-wrap">
+          <input type="number" class="fi" id="i-alt" value="20000" min="0" step="100">
+          <div class="utog">
+            <button class="ub" data-field="alt" data-unit="m" onclick="setUnit('alt','m')">m</button>
+            <div class="usep"></div>
+            <button class="ub on" data-field="alt" data-unit="ft" onclick="setUnit('alt','ft')">ft</button>
+          </div>
+        </div>
+      </div>
+      <div class="fdiv">Ángulos de elevación (vista vertical)</div>
+      <div class="f"><label class="fl">Ángulo Echo superior</label>
+        <div class="fi-wrap"><input type="number" class="fi" id="i-esup" value="5" min="0.1" max="89" step="0.5">
+          <div class="utog"><span class="uonly">°</span></div></div></div>
+      <div class="f"><label class="fl">Ángulo Echo inferior (adicional)</label>
+        <div class="fi-wrap"><input type="number" class="fi" id="i-einf" value="10" min="0.1" max="89" step="0.5">
+          <div class="utog"><span class="uonly">°</span></div></div></div>
+      <div class="fdiv">Ángulos azimutales (vista superior)</div>
+      <div class="f"><label class="fl">Ángulo Echo frontal</label>
+        <div class="fi-wrap"><input type="number" class="fi" id="i-ef" value="60" min="1" max="179" step="1">
+          <div class="utog"><span class="uonly">°</span></div></div></div>
+      <div class="f"><label class="fl">Ángulo Echo trasero</label>
+        <div class="fi-wrap"><input type="number" class="fi" id="i-eb" value="30" min="1" max="179" step="1">
+          <div class="utog"><span class="uonly">°</span></div></div></div>
+      <div class="fdiv">Profundidad Echo (anillo de referencia)</div>
+      <div class="f fw"><label class="fl">Profundidad Echo configurada</label>
+        <div class="fi-wrap">
+          <input type="number" class="fi" id="i-prof" value="200" min="1" step="1">
+          <div class="utog">
+            <button class="ub on" data-field="prof" data-unit="km" onclick="setUnit('prof','km')">km</button>
+            <div class="usep"></div>
+            <button class="ub" data-field="prof" data-unit="nm" onclick="setUnit('prof','nm')">NM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mft">
+      <button class="bghost" id="m-cancel">Cancelar</button>
+      <button class="bsave" id="m-save">Aplicar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Load Three.js as ES module, expose to global scope -->
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+window._THREE = THREE;
+window._OrbitControls = OrbitControls;
+window._threeReady = true;
+// Dispatch event so main script knows Three is loaded
+window.dispatchEvent(new Event('three-ready'));
+</script>
+
+<script>
+// ═══════════════════════════════════════════
+//  CONSTANTS & STATE
+// ═══════════════════════════════════════════
+const KM_PER_NM=1.852, M_PER_FT=0.3048, STEPS=64;
+
+const S={
+  units:{alt:'ft',prof:'km'},
+  p:{altM:20000*M_PER_FT,angSup:5,angInf:10,azFront:60,azBack:30,profKm:200},
+  pos:null,hdg:0,mk:null,
+  L:{r:null,l:null,b:null,rg:null},
+};
+
+// ═══════════════════════════════════════════
+//  MAP
+// ═══════════════════════════════════════════
+const map=L.map('map',{center:[40.4,-3.7],zoom:5});
+const tDk=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  {attribution:'© OSM © CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
+const tLt=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+  {attribution:'© OSM © CARTO',subdomains:'abcd',maxZoom:19});
+
+// ═══════════════════════════════════════════
+//  2D GEOMETRY
+// ═══════════════════════════════════════════
+function dest(lat,lon,brg,dkm){
+  const R=6371,d=dkm/R,b=brg*Math.PI/180;
+  const p1=lat*Math.PI/180,l1=lon*Math.PI/180;
+  const p2=Math.asin(Math.sin(p1)*Math.cos(d)+Math.cos(p1)*Math.sin(d)*Math.cos(b));
+  const l2=l1+Math.atan2(Math.sin(b)*Math.sin(d)*Math.cos(p1),Math.cos(d)-Math.sin(p1)*Math.sin(p2));
+  return[p2*180/Math.PI,l2*180/Math.PI];
+}
+function gRng(altM,deg){return deg<=0?1e6:(altM/Math.tan(deg*Math.PI/180))/1000;}
+
+function trapPoly(lat,lon,near,far,ctr,hF,hB){
+  const s=ctr-hF,tot=hF+hB,n=Math.max(STEPS,Math.ceil(tot)),pts=[];
+  for(let i=0;i<=n;i++) pts.push(dest(lat,lon,s+tot*i/n,far));
+  for(let i=n;i>=0;i--) pts.push(dest(lat,lon,s+tot*i/n,near));
+  return[pts];
+}
+
+function clearLayers(){Object.keys(S.L).forEach(k=>{if(S.L[k]){S.L[k].remove();S.L[k]=null;}});}
+
+function render2D(){
+  if(!S.pos)return;
+  clearLayers();
+  const{lat,lng}=S.pos,{altM,angSup,angInf,azFront,azBack,profKm}=S.p;
+  const near=gRng(altM,angSup), far=gRng(altM,angSup+angInf);
+  const v={r:$('chk-r').checked,l:$('chk-l').checked,b:$('chk-b').checked,rg:$('chk-rg').checked};
+  if(v.r) S.L.r=L.polygon(trapPoly(lat,lng,near,far,S.hdg+90,azFront,azBack),
+    {color:'#f87171',fillColor:'#ef4444',fillOpacity:.35,weight:1.5,opacity:.9}).addTo(map);
+  if(v.l) S.L.l=L.polygon(trapPoly(lat,lng,near,far,S.hdg-90,azBack,azFront),
+    {color:'#67e8f9',fillColor:'#22d3ee',fillOpacity:.35,weight:1.5,opacity:.9}).addTo(map);
+  if(v.b) S.L.b=L.circle([lat,lng],
+    {radius:far*1e3,color:'#fbbf24',fillColor:'#f59e0b',fillOpacity:.2,weight:1.5,dashArray:'4 4'}).addTo(map);
+  if(v.rg) S.L.rg=L.circle([lat,lng],
+    {radius:profKm*1e3,color:'#94a3b8',fillOpacity:0,weight:1.5,dashArray:'6 4'}).addTo(map);
+  $('r-near').textContent=fkm(near);$('r-far').textContent=fkm(far);
+  $('r-blind').textContent=fkm(far);$('r-ring').textContent=profKm.toFixed(0)+' km';
+  if(w3dOpen) build3D();
+  if(mlReady) updateML();
+}
+
+function fkm(k){return k>=9000?'>9000 km':k.toFixed(1)+' km';}
+function $(id){return document.getElementById(id);}
+
+function updateSB(){
+  const p=S.p,u=S.units;
+  $('p-alt').textContent=u.alt==='m'?`${p.altM.toFixed(0)} m`:`${(p.altM/M_PER_FT).toFixed(0)} ft`;
+  $('p-ang').textContent=`${p.angSup}° / +${p.angInf}°`;
+  $('p-az').textContent=`${p.azFront}° / ${p.azBack}°`;
+  $('p-prof').textContent=u.prof==='km'?`${p.profKm.toFixed(0)} km`:`${(p.profKm/KM_PER_NM).toFixed(1)} NM`;
+  if(S.pos){
+    $('d-lat').textContent=S.pos.lat.toFixed(4)+'°';
+    $('d-lon').textContent=S.pos.lng.toFixed(4)+'°';
+    $('d-hdg').textContent=S.hdg.toFixed(1)+'°';
+    const b=$('st-badge');b.className='badge s-on';b.innerHTML='<span class="sdot"></span>Activo';
+    $('tip').style.display='none';
+  }
+}
+
+// ═══════════════════════════════════════════
+//  MARKER
+// ═══════════════════════════════════════════
+function mkIcon(h){
+  return L.divIcon({
+    html:`<svg width="34" height="42" viewBox="0 0 34 42" style="transform:rotate(${h}deg);transform-origin:50% 52%">
+      <defs><filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+      <polygon points="17,2 30,37 17,29 4,37" fill="#388bfd" stroke="#fff" stroke-width="1.8" filter="url(#g)"/>
+      <circle cx="17" cy="22" r="3.8" fill="#fff" opacity=".9"/></svg>`,
+    className:'',iconSize:[34,42],iconAnchor:[17,22]
+  });
+}
+function placeMk(ll){
+  if(S.mk)S.mk.remove();
+  S.pos=ll;
+  S.mk=L.marker(ll,{icon:mkIcon(S.hdg),draggable:true,autoPan:true}).addTo(map);
+  S.mk.on('drag',e=>{S.pos=e.target.getLatLng();render2D();updateSB();});
+  S.mk.on('contextmenu',()=>{S.hdg=(S.hdg+15)%360;S.mk.setIcon(mkIcon(S.hdg));render2D();updateSB();});
+  setTimeout(()=>{
+    const el=S.mk.getElement();if(!el)return;
+    el.addEventListener('wheel',e=>{e.preventDefault();e.stopPropagation();
+      S.hdg=((S.hdg+(e.deltaY>0?5:-5))+360)%360;S.mk.setIcon(mkIcon(S.hdg));render2D();updateSB();
+    },{passive:false});
+  },60);
+  render2D();updateSB();
+}
+map.on('click',e=>placeMk(e.latlng));
+['chk-r','chk-l','chk-b','chk-rg'].forEach(id=>$(id).addEventListener('change',render2D));
+
+// ═══════════════════════════════════════════
+//  3D ENGINE
+// ═══════════════════════════════════════════
+let w3dOpen=false,terrainOn=false;
+let R3=null,S3=null,C3=null,OC=null,raf=null;
+
+function brgToXZ(brg,km){
+  const r=brg*Math.PI/180;
+  return{x:km*Math.sin(r),z:-km*Math.cos(r)};
+}
+
+function init3D(){
+  const THREE=window._THREE, OrbitControls=window._OrbitControls;
+  if(!THREE){console.error('Three.js not loaded');return;}
+
+  const cv=$('canvas3d');
+  // Force explicit size
+  const rect=cv.getBoundingClientRect();
+  const W=Math.max(rect.width,400), H=Math.max(rect.height,300);
+  cv.width=W; cv.height=H;
+
+  R3=new THREE.WebGLRenderer({canvas:cv,antialias:true});
+  R3.setPixelRatio(Math.min(window.devicePixelRatio,2));
+  R3.setSize(W,H,false);
+  R3.setClearColor(0x0d1117,1);
+  R3.shadowMap.enabled=true;
+
+  S3=new THREE.Scene();
+  S3.fog=new THREE.FogExp2(0x0d1117,0.003);
+
+  C3=new THREE.PerspectiveCamera(50,W/H,0.5,5000);
+  C3.position.set(0,120,300);
+  C3.lookAt(0,0,0);
+
+  if(OrbitControls){
+    OC=new OrbitControls(C3,cv);
+    OC.enableDamping=true;OC.dampingFactor=0.07;
+    OC.minDistance=10;OC.maxDistance=2000;
+    OC.maxPolarAngle=Math.PI/2.02;
+  }
+
+  // Lights
+  S3.add(new THREE.AmbientLight(0xffffff,0.5));
+  const dl=new THREE.DirectionalLight(0xffffff,0.9);
+  dl.position.set(100,200,80);S3.add(dl);
+  S3.add(new THREE.HemisphereLight(0x4466cc,0x223322,0.4));
+
+  build3D();
+
+  (function loop(){
+    raf=requestAnimationFrame(loop);
+    if(OC)OC.update();
+    R3.render(S3,C3);
+  })();
+}
+
+function resize3D(){
+  if(!R3||!C3)return;
+  const cv=$('canvas3d');
+  const rect=cv.getBoundingClientRect();
+  const W=Math.max(rect.width,100),H=Math.max(rect.height,100);
+  R3.setSize(W,H,false);
+  C3.aspect=W/H;C3.updateProjectionMatrix();
+}
+
+function clearScene(){
+  if(!S3)return;
+  const rem=[];
+  S3.traverse(o=>{if(o.userData.cov)rem.push(o);});
+  rem.forEach(o=>{
+    S3.remove(o);
+    if(o.geometry)o.geometry.dispose();
+    if(o.material){if(Array.isArray(o.material))o.material.forEach(m=>m.dispose());else o.material.dispose();}
+  });
+}
+
+function build3D(){
+  if(!S3||!R3)return;
+  const THREE=window._THREE;
+  clearScene();
+
+  const{altM,angSup,angInf,azFront,azBack,profKm}=S.p;
+  const altKm=altM/1000;
+  const near=gRng(altM,angSup), far=gRng(altM,angSup+angInf);
+  const hdg=S.hdg;
+
+  // ── GROUND ──
+  const gSize=Math.max(far,profKm,50)*3.5;
+  if(terrainOn){
+    const geo=new THREE.PlaneGeometry(gSize*2,gSize*2,96,96);
+    geo.rotateX(-Math.PI/2);
+    const pos=geo.attributes.position;
+    for(let i=0;i<pos.count;i++){
+      const x=pos.getX(i),z=pos.getZ(i);
+      const h=Math.sin(x*.015)*5+Math.cos(z*.02)*4+Math.sin(x*.04+z*.03)*2+Math.cos(x*.07)*1.5;
+      pos.setY(i,Math.max(0,h));
+    }
+    pos.needsUpdate=true;geo.computeVertexNormals();
+    const m=new THREE.MeshLambertMaterial({color:0x2a4520});
+    const mesh=new THREE.Mesh(geo,m);mesh.userData.cov=true;S3.add(mesh);
+    const wm=new THREE.Mesh(geo.clone(),new THREE.MeshBasicMaterial({color:0x3a6030,wireframe:true,transparent:true,opacity:.2}));
+    wm.userData.cov=true;S3.add(wm);
+  } else {
+    const geo=new THREE.PlaneGeometry(gSize*2,gSize*2,24,24);
+    geo.rotateX(-Math.PI/2);
+    const m=new THREE.MeshLambertMaterial({color:0x141e2a});
+    const mesh=new THREE.Mesh(geo,m);mesh.userData.cov=true;S3.add(mesh);
+  }
+
+  // Grid
+  const g=new THREE.GridHelper(gSize*2,40,0x1e3048,0x182030);
+  g.position.y=0.2;g.userData.cov=true;S3.add(g);
+
+  // ── POLE ──
+  const poleG=new THREE.CylinderGeometry(0.4,0.4,altKm,8);
+  const poleM=new THREE.MeshLambertMaterial({color:0x388bfd});
+  const pole=new THREE.Mesh(poleG,poleM);pole.position.y=altKm/2;
+  pole.userData.cov=true;S3.add(pole);
+
+  // Arrow cone at apex
+  const coneG=new THREE.ConeGeometry(2.5,6,8);
+  const coneM=new THREE.MeshLambertMaterial({color:0x388bfd});
+  const cone=new THREE.Mesh(coneG,coneM);
+  // point in heading direction
+  const hRad=(hdg)*Math.PI/180;
+  cone.position.set(0,altKm,0);
+  cone.rotation.z=Math.PI/2;
+  cone.rotation.y=-hRad;
+  cone.userData.cov=true;S3.add(cone);
+
+  // ── WEDGES ──
+  buildWedge(altKm,near,far,hdg+90,azFront,azBack,0xef4444,0.45);
+  buildWedge(altKm,near,far,hdg-90,azBack,azFront,0x22d3ee,0.45);
+
+  // ── BLIND CONE ──
+  const bcG=new THREE.ConeGeometry(far,altKm,64,1,true);
+  const bcM=new THREE.MeshLambertMaterial({color:0xf59e0b,transparent:true,opacity:.18,side:THREE.DoubleSide,depthWrite:false});
+  const bc=new THREE.Mesh(bcG,bcM);bc.position.y=altKm/2;bc.userData.cov=true;S3.add(bc);
+  // base ring
+  const brG=new THREE.RingGeometry(far-0.5,far+0.5,64);
+  const brM=new THREE.MeshBasicMaterial({color:0xfbbf24,side:THREE.DoubleSide,transparent:true,opacity:.6});
+  const br=new THREE.Mesh(brG,brM);br.rotation.x=-Math.PI/2;br.position.y=0.15;br.userData.cov=true;S3.add(br);
+
+  // ── REFERENCE RING ──
+  const rpts=[];
+  for(let i=0;i<=128;i++){const a=2*Math.PI*i/128;rpts.push(new THREE.Vector3(Math.sin(a)*profKm,0.3,-Math.cos(a)*profKm));}
+  const rlG=new THREE.BufferGeometry().setFromPoints(rpts);
+  const rlM=new THREE.LineBasicMaterial({color:0x94a3b8,transparent:true,opacity:.5});
+  const rl=new THREE.Line(rlG,rlM);rl.userData.cov=true;S3.add(rl);
+
+  // ── BEAM EDGE LINES ──
+  [[hdg+90,azFront,azBack,0xff6b6b],[hdg-90,azBack,azFront,0x4ecdc4]].forEach(([ctr,hF,hB,col])=>{
+    [ctr-hF,ctr+hB].forEach(az=>{
+      const pf=brgToXZ(az,far);
+      const lpts=[new THREE.Vector3(0,altKm,0),new THREE.Vector3(pf.x,0,pf.z)];
+      const lg=new THREE.BufferGeometry().setFromPoints(lpts);
+      const lm=new THREE.LineBasicMaterial({color:col,transparent:true,opacity:.55});
+      const ln=new THREE.Line(lg,lm);ln.userData.cov=true;S3.add(ln);
+    });
+  });
+}
+
+function buildWedge(altKm,near,far,ctrBrg,hF,hB,color,opacity){
+  const THREE=window._THREE;
+  const azS=ctrBrg-hF, tot=hF+hB;
+  const n=Math.max(48,Math.ceil(tot));
+  const verts=[], idxs=[];
+
+  // vertex 0: apex
+  verts.push(0,altKm,0);
+
+  // far arc: indices 1..n+1
+  for(let i=0;i<=n;i++){
+    const az=azS+tot*i/n, p=brgToXZ(az,far);
+    verts.push(p.x,0,p.z);
+  }
+  // near arc: indices n+2..2n+2
+  for(let i=0;i<=n;i++){
+    const az=azS+tot*i/n, p=brgToXZ(az,near);
+    verts.push(p.x,0,p.z);
+  }
+
+  const fBase=1, nBase=n+2;
+  // ground fill (trapezoid)
+  for(let i=0;i<n;i++){
+    idxs.push(fBase+i,fBase+i+1,nBase+i);
+    idxs.push(fBase+i+1,nBase+i+1,nBase+i);
+  }
+  // side faces apex → far arc
+  for(let i=0;i<n;i++){
+    idxs.push(0,fBase+i,fBase+i+1);
+  }
+
+  const geo=new THREE.BufferGeometry();
+  geo.setAttribute('position',new THREE.Float32BufferAttribute(verts,3));
+  geo.setIndex(idxs);
+  geo.computeVertexNormals();
+
+  const mat=new THREE.MeshLambertMaterial({color,transparent:true,opacity,side:THREE.DoubleSide,depthWrite:false});
+  const mesh=new THREE.Mesh(geo,mat);mesh.userData.cov=true;S3.add(mesh);
+
+  // wireframe outline
+  const em=new THREE.LineBasicMaterial({color,transparent:true,opacity:.75});
+  const eg=new THREE.EdgesGeometry(geo);
+  const ew=new THREE.LineSegments(eg,em);ew.userData.cov=true;S3.add(ew);
+}
+
+// ── OPEN/CLOSE 3D ──
+$('btn3d').addEventListener('click',()=>{
+  w3dOpen=!w3dOpen;
+  $('p3d').classList.toggle('open',w3dOpen);
+  $('btn3d').classList.toggle('on',w3dOpen);
+  if(w3dOpen){
+    // Wait for CSS transition to finish, then init or resize
+    setTimeout(()=>{
+      if(!window._threeReady){
+        // Three.js not loaded yet, wait
+        window.addEventListener('three-ready',()=>{ init3D(); resize3D(); },{once:true});
+      } else if(!R3){
+        init3D();
+      } else {
+        resize3D();build3D();
+        if(!raf)(function loop(){raf=requestAnimationFrame(loop);if(OC)OC.update();R3.render(S3,C3);})();
+      }
+    },350);
+  } else {
+    if(raf){cancelAnimationFrame(raf);raf=null;}
+  }
+});
+
+$('btn-3d-close').addEventListener('click',()=>{
+  w3dOpen=false;$('p3d').classList.remove('open');$('btn3d').classList.remove('on');
+  if(raf){cancelAnimationFrame(raf);raf=null;}
+});
+
+$('btn-terrain').addEventListener('click',()=>{
+  terrainOn=!terrainOn;
+  $('btn-terrain').classList.toggle('on',terrainOn);
+  $('btn-terrain').innerHTML=`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-8 4 5 3-4 6 7H3z"/></svg>Relieve: ${terrainOn?'ON':'OFF'}`;
+  if(w3dOpen)build3D();
+});
+
+// Resize observer on canvas
+new ResizeObserver(()=>{ if(w3dOpen)resize3D(); }).observe($('canvas3d'));
+window.addEventListener('resize',()=>{ if(w3dOpen)resize3D(); });
+
+// ═══════════════════════════════════════════
+//  UNIT TOGGLE
+// ═══════════════════════════════════════════
+window.setUnit=function(field,unit){
+  const old=S.units[field];if(old===unit)return;S.units[field]=unit;
+  if(field==='alt'){
+    const el=$('i-alt'),v=parseFloat(el.value)||0;
+    el.value=old==='m'?(v/M_PER_FT).toFixed(0):(v*M_PER_FT).toFixed(0);
+  }else if(field==='prof'){
+    const el=$('i-prof'),v=parseFloat(el.value)||0;
+    el.value=old==='km'?(v/KM_PER_NM).toFixed(1):(v*KM_PER_NM).toFixed(0);
+  }
+  document.querySelectorAll(`[data-field="${field}"]`).forEach(b=>b.classList.toggle('on',b.dataset.unit===unit));
+};
+
+// ═══════════════════════════════════════════
+//  CONFIG MODAL
+// ═══════════════════════════════════════════
+const modal=$('cfg-modal');
+$('btn-cfg').addEventListener('click',()=>{syncIn();modal.classList.add('open');});
+$('m-close').addEventListener('click',()=>modal.classList.remove('open'));
+$('m-cancel').addEventListener('click',()=>modal.classList.remove('open'));
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open');});
+$('m-save').addEventListener('click',()=>{readIn();render2D();updateSB();modal.classList.remove('open');});
+
+function readIn(){
+  const u=S.units;
+  const ar=parseFloat($('i-alt').value)||0, pr=parseFloat($('i-prof').value)||1;
+  S.p.altM=u.alt==='m'?ar:ar*M_PER_FT;S.p.profKm=u.prof==='km'?pr:pr*KM_PER_NM;
+  S.p.angSup=parseFloat($('i-esup').value)||1;S.p.angInf=parseFloat($('i-einf').value)||1;
+  S.p.azFront=parseFloat($('i-ef').value)||1;S.p.azBack=parseFloat($('i-eb').value)||1;
+}
+function syncIn(){
+  const p=S.p,u=S.units;
+  $('i-alt').value=(u.alt==='m'?p.altM:p.altM/M_PER_FT).toFixed(0);
+  $('i-prof').value=(u.prof==='km'?p.profKm:p.profKm/KM_PER_NM).toFixed(u.prof==='km'?0:1);
+  $('i-esup').value=p.angSup;$('i-einf').value=p.angInf;
+  $('i-ef').value=p.azFront;$('i-eb').value=p.azBack;
+}
+
+// ═══════════════════════════════════════════
+//  THEME
+// ═══════════════════════════════════════════
+let theme='dark';
+$('btn-theme').addEventListener('click',()=>{
+  theme=theme==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',theme);
+  if(theme==='light'){tDk.remove();tLt.addTo(map);}else{tLt.remove();tDk.addTo(map);}
+  if(R3)R3.setClearColor(theme==='dark'?0x0d1117:0xdde8f0,1);
+  $('btn-theme').innerHTML=theme==='light'
+    ?`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
+    :`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+});
+
+
+// ═══════════════════════════════════════════
+//  MAPA 3D GIS - MapLibre GL JS  (v5)
+// ═══════════════════════════════════════════
+var mlMap=null, mlReady=false, mlTerrain=false, pgisOpen=false;
+
+// ── Style ────────────────────────────────────────────────────────────────────
+function mlStyle(){
+  var dk=document.documentElement.getAttribute('data-theme')!=='light';
+  var t=dk
+    ?['https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png','https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png']
+    :['https://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png','https://b.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'];
+  return{version:8,glyphs:'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+    sources:{
+      osm:{type:'raster',tiles:t,tileSize:256,maxzoom:19,attribution:'(c) OSM (c) CARTO'},
+      dem:{type:'raster-dem',
+           tiles:['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+           tileSize:256,encoding:'terrarium',maxzoom:15,
+           attribution:'Terrain: ArcticDEM/SRTM/NED/ETOPO1 (AWS)'},
+      'dem-hs':{type:'raster-dem',
+           tiles:['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+           tileSize:256,encoding:'terrarium',maxzoom:15}
+    },
+    layers:[
+      {id:'bg',type:'background',paint:{'background-color':dk?'#0d1117':'#e8ecf0'}},
+      {id:'osm-l',type:'raster',source:'osm'},
+      {id:'hs',type:'hillshade',source:'dem-hs',
+       paint:{'hillshade-exaggeration':0,'hillshade-shadow-color':'#1a1a2e',
+              'hillshade-highlight-color':'#ffffff','hillshade-accent-color':'#4a90d9',
+              'hillshade-illumination-direction':315,'hillshade-illumination-anchor':'map'}}
+    ]};
+}
+
+// ── Geometry helpers ─────────────────────────────────────────────────────────
+function mlCircCoords(lat,lon,km){
+  var pts=[];
+  for(var i=0;i<=128;i++){var p=dest(lat,lon,360*i/128,km);pts.push([p[1],p[0]]);}
+  pts.push(pts[0]);return pts;
+}
+
+// Build N radial slices of the trapezoid, each as a separate polygon feature
+// with fill-extrusion-height varying linearly (altM at near → 0 at far)
+// This gives the beam a realistic wedge shape in 3D
+function mlBeamSlices(lat,lng,near,far,ctr,hF,hB,altM,nSlices){
+  nSlices = nSlices || 40;
+  var features = [];
+  var s = ctr - hF, tot = hF + hB;
+  var nArc = Math.max(8, Math.ceil(tot / nSlices));
+
+  for(var ri=0; ri<nSlices; ri++){
+    var r0 = near + (far - near) * ri / nSlices;
+    var r1 = near + (far - near) * (ri+1) / nSlices;
+    // Height of beam at this radial distance:
+    // at r=near → altM (top of beam), at r=far → 0 (hits ground)
+    var h0 = altM * (1 - ri/nSlices);       // outer edge of this slice
+    var h1 = altM * (1 - (ri+1)/nSlices);   // inner edge of next slice
+    var topH   = Math.round(Math.max(h0, h1));
+    var baseH  = Math.round(Math.max(0, Math.min(h0, h1)));
+
+    // Build slice polygon
+    var coords = [];
+    var nA = nArc;
+    for(var i=0; i<=nA; i++){
+      var a=s+tot*i/nA;
+      var p=dest(lat,lng,a,r1);
+      coords.push([p[1],p[0]]);
+    }
+    for(var i=nA; i>=0; i--){
+      var a=s+tot*i/nA;
+      var p=dest(lat,lng,a,r0);
+      coords.push([p[1],p[0]]);
+    }
+    coords.push(coords[0]);
+
+    features.push({
+      type:'Feature',
+      geometry:{type:'Polygon',coordinates:[coords]},
+      properties:{topH:topH, baseH:baseH}
+    });
+  }
+  return {type:'FeatureCollection', features:features};
+}
+
+// ── Layer setup ──────────────────────────────────────────────────────────────
+function mlAddLayers(){
+  var empty={type:'FeatureCollection',features:[]};
+  ['ml-r','ml-l','ml-b','ml-rg','ml-sys','ml-sys-col'].forEach(function(id){
+    if(!mlMap.getSource(id))mlMap.addSource(id,{type:'geojson',data:empty});
+  });
+
+  if(!mlMap.getLayer('extr-r')){
+    // Echo right — wedge slices with variable height
+    mlMap.addLayer({id:'extr-r',type:'fill-extrusion',source:'ml-r',
+      paint:{
+        'fill-extrusion-color':'#ef4444',
+        'fill-extrusion-opacity':0.55,
+        'fill-extrusion-base':  ['get','baseH'],
+        'fill-extrusion-height':['get','topH']
+      }
+    });
+    // Echo left
+    mlMap.addLayer({id:'extr-l',type:'fill-extrusion',source:'ml-l',
+      paint:{
+        'fill-extrusion-color':'#22d3ee',
+        'fill-extrusion-opacity':0.55,
+        'fill-extrusion-base':  ['get','baseH'],
+        'fill-extrusion-height':['get','topH']
+      }
+    });
+    // Cono ciego — flat fill
+    mlMap.addLayer({id:'fill-b', type:'fill',source:'ml-b',
+      paint:{'fill-color':'#f59e0b','fill-opacity':0.13}});
+    mlMap.addLayer({id:'line-b', type:'line',source:'ml-b',
+      paint:{'line-color':'#fbbf24','line-width':1.5,'line-dasharray':[3,2]}});
+    // Anillo referencia
+    mlMap.addLayer({id:'line-rg',type:'line',source:'ml-rg',
+      paint:{'line-color':'#94a3b8','line-width':1.5,'line-dasharray':[5,3]}});
+    // Sistema — columna vertical a la altura real del sistema
+    mlMap.addLayer({id:'sys-col',type:'fill-extrusion',source:'ml-sys-col',
+      paint:{
+        'fill-extrusion-color':'#388bfd',
+        'fill-extrusion-opacity':0.9,
+        'fill-extrusion-base':0,
+        'fill-extrusion-height':['get','altM']
+      }
+    });
+    // Sistema punto en superficie
+    mlMap.addLayer({id:'sys-dot',type:'circle',source:'ml-sys',
+      paint:{'circle-radius':7,'circle-color':'#388bfd',
+             'circle-stroke-color':'#fff','circle-stroke-width':2,
+             'circle-pitch-alignment':'map'}
+    });
+  }
+}
+
+// ── Update all layers ────────────────────────────────────────────────────────
+function updateML(){
+  if(!mlMap||!mlReady||!S.pos)return;
+  var lat=S.pos.lat, lng=S.pos.lng;
+  var altM   = S.p.altM;
+  var angSup = S.p.angSup;
+  var angInf = S.p.angInf;
+  var near = gRng(altM, angSup+angInf);   // inner edge (steeper ray)
+  var far  = gRng(altM, angSup);          // outer edge (shallower ray)
+
+  // Beam slices for each Echo side
+  mlMap.getSource('ml-r').setData(
+    mlBeamSlices(lat,lng,near,far, S.hdg+90, S.p.azFront, S.p.azBack, altM, 50));
+  mlMap.getSource('ml-l').setData(
+    mlBeamSlices(lat,lng,near,far, S.hdg-90, S.p.azBack,  S.p.azFront, altM, 50));
+
+  // Cono ciego (flat circle up to near range)
+  mlMap.getSource('ml-b').setData({type:'FeatureCollection',features:[
+    {type:'Feature',geometry:{type:'Polygon',
+     coordinates:[mlCircCoords(lat,lng,near)]},properties:{}}]});
+
+  // Anillo profundidad
+  mlMap.getSource('ml-rg').setData({type:'FeatureCollection',features:[
+    {type:'Feature',geometry:{type:'LineString',
+     coordinates:mlCircCoords(lat,lng,S.p.profKm).slice(0,-1)},properties:{}}]});
+
+  // Sistema — pequeño circulo en superficie
+  mlMap.getSource('ml-sys').setData({type:'FeatureCollection',features:[
+    {type:'Feature',geometry:{type:'Point',coordinates:[lng,lat]},properties:{}}]});
+
+  // Columna vertical del sistema a la altitud real
+  // Aproximamos como un círculo de radio 1km extruido hasta altM
+  var colCoords = mlCircCoords(lat,lng,0.8);
+  mlMap.getSource('ml-sys-col').setData({type:'FeatureCollection',features:[
+    {type:'Feature',geometry:{type:'Polygon',coordinates:[colCoords]},
+     properties:{altM: Math.round(altM)}}]});
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+function initML(){
+  var center=S.pos?[S.pos.lng,S.pos.lat]:[-3.7,40.4];
+  mlMap=new maplibregl.Map({
+    container:'mlmap',
+    style:mlStyle(),
+    center:center,
+    zoom:S.pos?7:5,
+    pitch:55, bearing:-20, maxPitch:85,
+    antialias:true,
+    preserveDrawingBuffer:true
+  });
+  mlMap.addControl(new maplibregl.NavigationControl({visualizePitch:true}),'top-right');
+  mlMap.addControl(new maplibregl.ScaleControl({maxWidth:120,unit:'metric'}),'bottom-right');
+
+  mlMap.on('load',function(){
+    mlAddLayers();
+    mlReady=true;
+    updateML();
+  });
+
+  mlMap.on('webglcontextlost',function(){console.warn('[ML] context lost');});
+  mlMap.on('webglcontextrestored',function(){
+    mlReady=false;
+    mlMap.once('idle',function(){
+      mlAddLayers();mlReady=true;updateML();
+    });
+  });
+
+  new ResizeObserver(function(){
+    if(mlMap&&pgisOpen){requestAnimationFrame(function(){mlMap.resize();});}
+  }).observe(document.getElementById('mlmap'));
+
+  mlMap.on('mousemove',function(e){
+    var el=document.getElementById('lbl-ml');
+    if(el)el.textContent=e.lngLat.lat.toFixed(4)+'  '+e.lngLat.lng.toFixed(4);
+  });
+}
+
+// ── Panel open/close ──────────────────────────────────────────────────────────
+function openPgis(){
+  pgisOpen=true;
+  document.getElementById('pgis').classList.add('open');
+  document.getElementById('btn-gis3d').classList.add('on');
+  if(typeof raf!=='undefined'&&raf){cancelAnimationFrame(raf);raf=null;}
+  setTimeout(function(){
+    if(!mlMap){initML();}
+    else{
+      requestAnimationFrame(function(){
+        mlMap.resize();updateML();
+        if(S.pos){mlMap.easeTo({center:[S.pos.lng,S.pos.lat],duration:500});}
+      });
+    }
+  },340);
+}
+
+function closePgis(){
+  pgisOpen=false;
+  document.getElementById('pgis').classList.remove('open');
+  document.getElementById('btn-gis3d').classList.remove('on');
+  if(typeof w3dOpen!=='undefined'&&w3dOpen&&typeof R3!=='undefined'&&R3){
+    if(!raf){(function loop3(){raf=requestAnimationFrame(loop3);if(OC)OC.update();R3.render(S3,C3);})();}
+  }
+}
+
+document.getElementById('btn-gis3d').addEventListener('click',function(){
+  if(pgisOpen)closePgis();else openPgis();
+});
+document.getElementById('btn-pgis-close').addEventListener('click',closePgis);
+
+// ── Terrain toggle ─────────────────────────────────────────────────────────
+document.getElementById('btn-ml-terrain').addEventListener('click',function(){
+  if(!mlMap||!mlReady)return;
+  mlTerrain=!mlTerrain;
+  try{
+    if(mlTerrain){
+      mlMap.setTerrain({source:'dem',exaggeration:1.8});
+      mlMap.setPaintProperty('hs','hillshade-exaggeration',0.55);
+    } else {
+      mlMap.setTerrain(null);
+      mlMap.setPaintProperty('hs','hillshade-exaggeration',0);
+    }
+  }catch(err){console.warn('[ML terrain]',err);}
+  this.classList.toggle('on',mlTerrain);
+  this.innerHTML='<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l5-8 4 5 3-4 6 7H3z"/></svg>Relieve: '+(mlTerrain?'ON':'OFF');
+  // Re-render coverage after terrain change so heights align with new ground
+  setTimeout(function(){if(mlReady)updateML();},600);
+});
+
+// ── Center button ───────────────────────────────────────────────────────────
+document.getElementById('btn-ml-center').addEventListener('click',function(){
+  if(!mlMap)return;
+  if(!S.pos){
+    mlMap.flyTo({center:[-3.7,40.4],zoom:5,pitch:45,bearing:0,speed:1.2,essential:true});
+    return;
+  }
+  mlMap.flyTo({center:[S.pos.lng,S.pos.lat],zoom:7,pitch:55,bearing:-20,speed:1.2,essential:true});
+});
+
+window.addEventListener('resize',function(){
+  if(mlMap&&pgisOpen)mlMap.resize();
+});
+
+// ═══════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════
+updateSB();
+</script>
+</body>
+</html>
